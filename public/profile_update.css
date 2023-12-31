@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+* {
+    margin: 0;
+}
+
+body {
+   
+    font-family: Arial;
+    overflow: hidden;
+}
+
+.main {
+    margin-top: 7%;
+    margin-left: 20%;
+    font-size: 16px;
+    padding: 0 10px;
+    width: 58%;
+    background-color: #f2f2f2;
+  
+   
+}
+
+.main form {
+    background-color: #f2f2f2;
+    border-radius: 18px;
+    margin-bottom: 10px;
+  /* padding: 20px 0 20px 50px;*/
+ padding-left: 150px;
+  padding-bottom: 10px;
+}
+
+.main input {
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 30px
+}
+
+#u_address
+{
+    margin-left:138px ;
+}
+
+#u_name
+{
+    margin-left: 154px;
+}
+
+.main button
+{
+    margin-top: 40px;
+    margin-left: 140px;
+    padding: 10px;
+    background-color: #0A2558;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+header
+{
+   
+    top:0;
+    position: fixed;
+    background-color: #0A2558;
+    width: 100%;
+    z-index: 1000;
+   /* background-color: #ecc440 !important;*/
+    /*background-image: url('../image/effect-2.webp');*/
+    
+}
+.sec-1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 50px;
+    height:60px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    position: relative;
+    /*background-color: #ecc440 !important;*/
+    background-color: #0A2558;
+}
+.sec-1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 64px;
+    width: 90%;
+
+ }
+
+.sec-1 h3{
+  
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+  color: white;
+}
+
+.sec-1 h3 span{
+  color:  lightseagreen;
+  font-family: cursive;
+}
+
+
+
+
+
+
+
+.p-3 i
+{
+    margin:0px 8px;
+    /*color: #333333;*/
+    font-size: 22px;
+    color: white;
+}
+
+
+
+.p-2 ul
+{
+    display:flex;
+     list-style: none;
+    align-items: center;
+    
+   
+}
+.p-2 ul li
+{
+    margin: 5px 20px;
+  /* color: #333333;*/
+  color: white;
+    font-family:'Open Sans', 'roboto';
+    font-size: 19px;
+    padding: 10px 0px;
+    /*font-weight: bold;*/
+}
+.p-2 ul li:hover{
+  text-decoration: underline;
+ padding-top: 4px;
+ color: #20b2aa;
+}
+
+#username
+{
+  color: black;
+    font-family: cursive;
+    font-size: 22px;
+    border: 1px solid #20b2aa;
+    padding: 5px;
+    background-color: #20b2aa;
+    color: white;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+#u_city
+{
+    margin-left: 170px;
+}
+
+#pin
+{
+    margin-left: 138px;
+}
+#state
+{
+    margin-left: 170px;
+}

@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    /*background-color: #f2f2f2;*/
+}
+a{
+    text-decoration: none;
+}
+header
+{
+   
+    top:0;
+    position: fixed;
+    background-color: #0A2558;
+    width: 100%;
+    z-index: 1000;
+   /* background-color: #ecc440 !important;*/
+    /*background-image: url('../image/effect-2.webp');*/
+    
+}
+.sec-1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 50px;
+    height:60px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    position: relative;
+    /*background-color: #ecc440 !important;*/
+    background-color: #0A2558;
+}
+.sec-1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 64px;
+    width: 90%;
+
+ }
+
+.sec-1 h3{
+  
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+  color: white;
+}
+
+.sec-1 h3 span{
+  color:  lightseagreen;
+  font-family: cursive;
+}
+
+
+
+
+
+
+
+.p-3 i
+{
+    margin:0px 8px;
+    /*color: #333333;*/
+    font-size: 22px;
+    color: white;
+}
+
+
+
+.p-2 ul
+{
+    display:flex;
+     list-style: none;
+    align-items: center;
+    
+   
+}
+.p-2 ul li
+{
+    margin: 5px 20px;
+  /* color: #333333;*/
+  color: white;
+    font-family:'Open Sans', 'roboto';
+    font-size: 19px;
+    padding: 10px 0px;
+    /*font-weight: bold;*/
+}
+.p-2 ul li:hover{
+  text-decoration: underline;
+ padding-top: 4px;
+ color: #20b2aa;
+}
+
+#username
+{
+  color: black;
+    font-family: cursive;
+    font-size: 22px;
+    border: 1px solid #20b2aa;
+    padding: 5px;
+    background-color: #20b2aa;
+    color: white;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*.order
+{
+    margin-top: 100px;
+}*/
+
+#book-1
+{
+    margin-right: 250px;
+    
+}
+.order {
+    margin-left: 220px; /* Adjust this margin to match your sidebar width */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f2f2f2; /* Set a background color */
+    margin-top: 100px;
+    width: 770px;
+  }
+  
+  /* Style for individual book-1 items */
+  .order .book-1 {
+    border: 1px solid #ccc; /* Add a border for separation */
+    padding: 10px; /* Add padding for spacing within each book-1 */
+    margin-bottom: 20px; /* Add margin to separate each book-1 */
+    width: 750px;
+  }
+  
+  /* Style for the headings inside each book-1 */
+  .order .book-1 h1 {
+    font-size: 18px; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Style for the content inside each book-1 */
+  .order .book-1 p {
+    font-size: 16px; /* Set the font size for content */
+    margin-top: 5px; /* Add margin for spacing */
+  }
+  
+  /* Style for the order ID specifically */
+  .order .book-1 h1:first-child {
+    color: #007bff; /* Change the color of the order ID text */
+  }
+  
+  /* Style for the total amount specifically */
+  .order .book-1 h1:last-child {
+    color: #ff5722; /* Change the color of the total amount text */
+  }
+  
+  #mode
+  {
+    color: #ff5722;
+  }
+
+  #bt
+  {
+    
+    background-color:#551A8B;
+    border: none;
+    padding: 7px;
+    color: #f2f2f2;
+    border-radius: 20px;
+    width: 120px;
+    
+  }

@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../public/profile.css">
+     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <header>
+      <nav class="sec-1">
+        <div class="p-1">
+          <!--  <a href="../index"><i class="fa fa-book"></i></a>-->
+          <a href="../index">
+            <h3>BOOK<span>STORE</span></h3>
+          </a>
+        </div>
+        <div class="p-2">
+          <ul>
+            <a href="../index">
+              <li>Home</li>
+            </a>
+            <a href="../shop">
+              <li>Shop</li>
+            </a>
+            <a href="../order">
+              <li>Order</li>
+            </a>
+            <a href="../feedback">
+              <li>Feedback</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-3">
+           <a href="../profile" id="username">{{user.u_name}}</a>
+         
+
+        
+          <a href="../cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+        <h2>Edit Profile</h2>
+        
+        <div class="card">
+            <div class="card-body">
+              <a href="../profile_update"><i class="fa fa-pen fa-xs edit"></i></a>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>ID</td>
+                            <td>:</td>
+                            <td>{{user.u_id}}</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td>{{user.u_name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>{{user.u_email}}</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>{{user.u_address}}</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>:</td>
+                            <td>{{user.u_city}}</td>
+                        </tr>
+                        <tr>
+                            <td>Pincode</td>
+                            <td>:</td>
+                            <td>{{user.pincode}}</td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>:</td>
+                            <td>{{user.state}}</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>:</td>
+                            <td>{{user.u_mobile}}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+        
+    <!-- End -->
+</body>
+</html>

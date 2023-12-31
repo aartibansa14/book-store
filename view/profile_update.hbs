@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../public/profile_update.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <nav class="sec-1">
+        <div class="p-1">
+          <!--  <a href="../index"><i class="fa fa-book"></i></a>-->
+          <a href="../index">
+            <h3>BOOK<span>STORE</span></h3>
+          </a>
+        </div>
+        <div class="p-2">
+          <ul>
+            <a href="../index">
+              <li>Home</li>
+            </a>
+            <a href="../shop">
+              <li>Shop</li>
+            </a>
+            <a href="../order">
+              <li>Order</li>
+            </a>
+            <a href="../feedback">
+              <li>Feedback</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-3">
+           <a href="../profile" id="username">{{user.u_name}}</a>
+          
+
+         
+          <a href="../cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+    <form action="/profile_update" method="POST">
+    <label for="u_name">Name</label>
+    <input type="text" id="u_name" name="u_name" value="{{user.u_name}}" pattern="[A-Za-z ]+" required><br>
+    <label for="u_address">Address</label>
+    <input type="text" id="u_address" name="u_address" value="{{user.u_address}}" required><br>
+    <label for="u_city">City</label>
+    <input type="text" id="u_city" name="u_city" value="{{user.u_city}}" pattern="[A-Za-z]+" required><br>
+     <label for="pincode">Pincode</label>
+    <input type="text" id="pin" name="pincode" value="{{user.pincode}}" required><br>
+    <label for="state">City</label>
+    <input type="text" id="state" name="state" value="{{user.state}}" pattern="[A-Za-z ]+" required><br>
+   
+    <label for="u_mobile">Mobile</label>
+    <input type="tel" id="u_mobile" name="u_mobile" value="{{user.u_mobile}}" pattern="[6-9][0-9]{9}" required><br>
+    
+    <!-- Add more fields for mobile, address, etc. -->
+    <button type="submit">Update Profile</button>
+    </div>
+</form>
+</body>
+</html>

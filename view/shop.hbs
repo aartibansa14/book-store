@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="../public/shop.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="big">
+   
+    <header>
+      <nav class="sec-1">
+        <div class="p-1">
+         
+          <a href="../index">
+            <h3>BOOK<span>STORE</span></h3>
+          </a>
+        </div>
+        <div class="p-2">
+          <ul>
+            <a href="../index">
+              <li>Home</li>
+            </a>
+            <a href="../shop">
+              <li>Shop</li>
+            </a>
+            <a href="../order">
+              <li>Order</li>
+            </a>
+            <a href="../feedback">
+              <li>Feedback</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-3">
+           <a href="../profile" id="username">{{user.u_name}}</a>
+          
+          <a href="../cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+
+
+   <div class="image">
+   <!-- <img src="../image/shop_book.avif">-->
+   </div>
+
+  <div class="item">
+    {{#each books}}
+    <div class="book-1">
+        <img src="data:image/jpeg;base64,{{this.b_image}}"  width="170px" height="250px">
+        <div class="small">
+           <p>{{this.b_name}}</p>
+            <span>₹ {{this.b_price}}</span>
+            <del>₹ {{this.b_del_price}}</del>
+           <!--- <h3>{{this.b_id}}</h3>-->
+            <br>
+            
+           <!--<button  id="addto" class="button" onclick="addtocart(this)">Add to Cart</button>-->
+         <a href="../cart"> <button class="button" onclick="addToCart('{{this.b_id}}', '{{this.b_name}}', {{this.b_price}}, '{{this.b_image}}',{{this.b_del_price}})">Add to Cart</button></a>
+          </div>
+             
+         </div>
+    {{/each}}
+  </div>
+  </div>
+
+  
+
+   
+</body>
+<script src="../js/shop.js"></script>
+</html>

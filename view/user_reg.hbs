@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!--font awsome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="../public/user_login.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="post">
+            <h3>REGISTER NOW</h3>
+        <input type = "text" name="u_id" placeholder="User ID" required class="box">
+        <input type="text" name="u_name" placeholder="Enter Your Name" required class="box" id="inputText"  onkeyup="capitalizeFirstLetter()" pattern="[A-Za-z ]+">
+        <input type = "email" name="u_email" placeholder="Enter Your Email" required class="box">
+        <input type = "tel" name="u_mobile" placeholder="Enter Your Mobile Number" required class="box" pattern="[6-9][0-9]{9}">
+         <input type = "text" name="u_address" placeholder="Enter Your Address" required class="box">
+         <input type = "text" name="u_city" placeholder="Enter Your City" required class="box" pattern="[A-Za-z]+">
+        <input type = "text" name="pincode" placeholder="Enter Your Pincode" required class="box">
+         <input type = "text" name="state" placeholder="Enter Your State" required class="box" id="box" pattern="[A-Za-z ]+">
+        
+        <input type = "password" name="u_password" placeholder="Enter your Password" required class="box">
+        
+        <input type = "password" name="u_con_pass" placeholder="Confirm your Password" required class="box">
+        
+        <input type = "Submit" name="Submit" value="Register Now" class="btn">
+        <p>Already, have an Account ?<a href="../user_login">Login Now</a></p>
+        
+    </div>
+    
+</body>
+<script>
+        function capitalizeFirstLetter() {
+            // Get the input element
+            const inputElement = document.getElementById("inputText");
+
+            // Get the current input value
+            let inputValue = inputElement.value;
+
+            // Check if there's at least one character
+            if (inputValue.length>0) {
+                // Capitalize the first letter
+                inputValue = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
+            }
+
+            // Update the input value with the capitalized text
+            inputElement.value = inputValue;
+        }
+    </script>
+</html>
+
+
+
+
+
+
+
+

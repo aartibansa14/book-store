@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="../public/user_login.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="/admin_login" method="post" id="yourLoginFormId">
+            <h3>ADMIN LOGIN</h3>
+             <input type="text" name="a_id" placeholder="Enter Admin ID" required class="box">
+             <input type="text" name="a_email" placeholder="Enter Your E-mail" required class="box">
+        <input type = "password" name="a_password" placeholder="Enter Your Password" required class="box">
+        
+        
+        <input type = "Submit" name="Submit" value="LOGIN" class="btn" id="btn">
+        
+        
+    </div>
+    </body>
+    <script src="../js/login.js"></script>
+</html>
+
+
+
+

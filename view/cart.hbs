@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Shopping Cart</title>
+</head>
+<body>
+   <header>
+      <nav class="sec-1">
+        <div class="p-1">
+          
+          <a href="../index">
+            <h3>BOOK<span>STORE</span></h3>
+          </a>
+        </div>
+        <div class="p-2">
+          <ul>
+            <a href="../index">
+              <li>Home</li>
+            </a>
+            <a href="../shop">
+              <li>Shop</li>
+            </a>
+            <a href="../order">
+              <li>Order</li>
+            </a>
+            <a href="../feedback">
+              <li>Feedback</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-3">
+           <a href="../profile" id="username">{{user.u_name}}</a>
+          
+
+          
+          <a href="../cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    
+    
+    
+<div id="cart">
+    <div id="cart_1">
+   
+    
+    </div>
+    <div id="cart_2">
+    <h1>PRICE DETAILS</h1>
+    </div>
+    </div>
+
+
+    <div id="full">
+       <div class="total" id="total">
+       <a href="../profile"  onclick="openPopup()"><button>Your Info</button></a>
+     
+
+       </div>
+
+      
+     <div class="place_form" id="place_form">
+        <form action="/cart" method="post" id="your-form-id">
+        
+               <p>payment mode:</p> 
+                
+                <label>
+               <input type="radio" name="pay_type" class="pay" id="cash" value="cash" onclick="submitForm()">cash
+               </label>
+                 <label>
+                 <input type="radio" name="pay_type" class="pay" id="pay" value="online">online
+                 </label>
+                 
+                  </div>
+            
+     
+          
+        </form>
+      </div>
+    </div>
+    
+    
+    <script src="../js/cart.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</body>
+</html>
+
+
+
+
+

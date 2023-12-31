@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Online Book Store</title>
+    <link rel="stylesheet" href="../public/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <header>
+       <nav class="sec-1">
+        <div class="p-1">
+          <!--  <a href="../index"><i class="fa fa-book"></i></a>-->
+          <a href="../index">
+            <h3>BOOK<span>STORE</span></h3>
+          </a>
+        </div>
+        <div class="p-2">
+          <ul>
+            <a href="../index">
+              <li>Home</li>
+            </a>
+            <a href="../shop">
+              <li>Shop</li>
+            </a>
+            <a href="../order">
+              <li>Order</li>
+            </a>
+            <a href="../feedback">
+              <li>Feedback</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-3">
+           <a href="../profile" id="username">{{user.u_name}}</a>
+         
+
+          
+          <a href="../cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+       
+        <form action="" method="post">
+             <h1>Feedback</h1>
+             <input type="text" id="id" name="u_id" value="{{user.u_id}}">
+            <input type="text" id="name" name="name"  placeholder="Your Name" pattern="[A-Za-z ]+" required>
+           
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+           
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        &copy; 2023 Online Book Store
+    </footer>
+</body>
+</html>
